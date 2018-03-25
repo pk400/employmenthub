@@ -1,15 +1,72 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    <h1>Hello world! This is the employment hub!</h1>
-</body>
+
+{% block content %}
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="col-lg-8">
+          <img class="img-fluid rounded" src="{% static 'images/pic1.jpg' %}" alt="">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+          <h1>Employment for New Immigrants in Brampton</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada nulla ac dolor dignissim rhoncus efficitur sit amet velit. Praesent id sagittis tellus. Curabitur nec accumsan felis. Suspendisse tempus, ante vitae eleifend pharetra, ex arcu laoreet purus, quis auctor lectus arcu ac tellus. Phasellus interdum felis ut neque molestie, vitae iaculis mauris lobortis. Quisque congue turpis a quam mattis, quis eleifend elit lacinia.</p>
+          <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+
+      <!-- Content Row -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Jobs in Canada</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Learn New Skills</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Fix Your Resume</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+  </body>
+
 </html>
+
+{% endblock %}
